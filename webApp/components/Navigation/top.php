@@ -8,7 +8,7 @@
                 </figure>
                 <nav>
                    <ul>
-                        <a><li>Home</li></a>
+                        <a><li class="av-active">Home</li></a>
                         <a><li>Skills</li></a>
                         <a><li>projects</li></a>
                    </ul>

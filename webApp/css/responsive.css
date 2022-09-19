@@ -42,14 +42,24 @@ START: RESPONSIVE
     }
 
     .hero div:nth-child(1) .desktop{
+        left: 30%;
+        width: 50%;
+        height: 280px;
+        border: 3px solid #191919;
+    }
+
+    .hero div:nth-child(1) .mobile{
         position: absolute;
-        top: 5%;
-        right: 3%;
-        width: 90%;
-        height: 500px;
-        overflow: hidden;
-        border-radius: 5px;
-        z-index: 3;
+        bottom: 30%;
+        left: 18%;
+        width: 150px;
+        height: 55%;
+        border: 3px solid #191919;
+    }
+
+    .hero div:nth-child(1) figure{
+        height: 450px;
+        /* border: 3px solid red; */
     }
 }
 
@@ -168,6 +178,29 @@ START: RESPONSIVE
         background: white;
         clip-path: polygon(0 77%, 100% 66%, 100% 100%, 0% 100%);
         height: 1000px;
+    }
+
+    .hero div:nth-child(1) .desktop{
+        left: 5%;
+        width: 90%;
+        max-width: 350px;
+        height: 200px;
+    }
+
+    .hero div:nth-child(1) .mobile{
+        left: 15%;
+        width: 80px;
+        bottom: -20%;
+        height: 150px;
+    }
+
+    .hero div:nth-child(1) figure{
+        height: 200px;
+        /* border: 3px solid red; */
+    }
+
+    .shape{
+        height: 500px;
     }
 
 }

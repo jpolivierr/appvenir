@@ -55,7 +55,6 @@ START: COLUMNS
     grid-column-start: 1;
     grid-row-start: 1;
     z-index: 1;
-    
     max-width: 1100px;
 }
 
@@ -108,11 +107,11 @@ START: content
     max-width: 700px !important;
 }
 
-.center-content div:nth-child(1){
+/* .center-content div:nth-child(1){
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .center-content div:nth-child(1) section{
      text-align: center;

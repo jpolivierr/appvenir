@@ -21,6 +21,12 @@ button{
     font-weight: 500;
     border-radius: 0px;
     font-size: .9rem;
+    transition: .3s ease-in-out;
+}
+
+.main-btn:hover{
+    background: white;
+    color: black;
 }
 
 .main-btn::before{
@@ -52,6 +58,12 @@ button{
     font-weight: 400;
     border-radius: 0px;
     font-size: .9rem;
+    transition: .3s ease-in-out;
+}
+
+.secondary-btn:hover{
+    background: black;
+    color: white;
 }
 
 .secondary-btn::before{
@@ -78,10 +90,15 @@ button{
 
 .tertiary-btn{
     background: #5a3bea;;
-    /* background: var(--main-color); */
     color: white;
     border-radius: 0px;
+    transition: .3s ease-in-out;
 }
+
+.tertiary-btn:hover{
+    background: #826bea;
+}
+
 .second-btn{
     background-color: var(--secondary-color);
     color: white;
@@ -106,9 +123,8 @@ START: Active Button Style
 =======================================================
 */
 .av-active{
-    border: 2px solid var(--secondary-color) !important;
-    color: var(--secondary-color);
-    border-radius: 100px;
+    border-bottom: 2px solid var(--main-color) !important;
+    color: var(--main-color);
 }
 /* 
 =======================================================
