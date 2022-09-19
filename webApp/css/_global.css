@@ -22,7 +22,7 @@ START: GLOBAL
     --shadow-soft : 10px 0px 50px -30px #4264889c;
     --shadow-btn: 5px 5px 20px -11px #802f904b;
   
-    --light-blue: #3e40ee08;
+    --light-blue: #f9f9ff;
     --text-color: #142149;
     --text-color-light: #525666;
     --text-color-error: #ff4e4e;
@@ -124,12 +124,18 @@ img{
 .bk-dark h4,
 .bk-dark h5,
 .bk-dark p,
+.bk-dark span,
 .bk-dark ul li{
     color: white;
 }
 
 .bk-light{
     background-color: var(--light-blue);
+}
+
+
+.bk-light menu div{
+    background: var(--dark-text) !important;
 }
 /* padding */
 .av-padding-none{

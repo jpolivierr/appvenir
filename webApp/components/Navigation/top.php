@@ -1,5 +1,5 @@
 <?php (function() { ob_start() ;?>
-        <header class="av-header-v1 bk-transparent " >
+        <header class="av-header-v1 bk-transparent" >
             <div class="container" >
                 <figure>
                     <a href="/">
@@ -10,7 +10,7 @@
                    <ul>
                         <a><li class="av-active">Home</li></a>
                         <a><li>Skills</li></a>
-                        <a><li>projects</li></a>
+                        <a><li>Projects</li></a>
                    </ul>
                 </nav>
                 <section>

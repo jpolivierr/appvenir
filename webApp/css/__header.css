@@ -5,12 +5,13 @@ START: AV HEADER V1
 =======================================================
 */
 .av-header-v1{
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
     position: fixed;
     width: 100%;
     top: 0;
-    background: white;
-    z-index: 2;
+    background: transparent;
+    z-index: 5;
+    transition: .3s;
 }
 
 .av-header-v1 div:nth-child(1) figure{
@@ -26,10 +27,16 @@ START: AV HEADER V1
 
 .av-header-v1 div:nth-child(1) section {
     height: 100%;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #ffffff59;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .3s;
+    padding: 0rem .5rem;
+}
+
+.av-header-v1 div:nth-child(1) section:hover{
+    background-color: #5a3bea12;
 }
 
 .av-header-v1 div:nth-child(1) section ul{
@@ -64,13 +71,22 @@ header div:nth-child(1)  nav ul{
     height: 100%;
 }
 
-.av-header-v1 div:nth-child(1)  nav ul li,
-header div:nth-child(1)  nav ul li{
+.av-header-v1 div:nth-child(1) nav ul li{
     border: 2px solid transparent;
     font-weight: 400;
-    padding: .3rem 0rem;
+    padding: .3rem .5rem;
     height: 100%;
+    cursor: pointer;
+    transition: .3s;
+    display: flex;
+   align-items: center;
 }
+
+.av-header-v1 div:nth-child(1) nav ul li:hover{
+    background-color: #5a3bea12;
+}
+
+
 /* 
 =======================================================
 END:
@@ -93,14 +109,13 @@ START: Menu
     position: relative;
     cursor: pointer;
     padding: 9px 8px;
-    border: 1px solid #ffffff38;
     border-radius: 5px;
   
 }
 
 .av-header-v1 div:nth-child(1) menu div{
     width: 100%;
-    height: 1px;
+    height: 2px;
     background-color: white;
     border-radius: 10px; 
 }

@@ -1,9 +1,31 @@
 
+class HeaderAnimation{
+    constructor(header){
+        this.header = document.querySelector(`${header}`)
+        this.scrollEffect(this.header)
+    }
+
+    scrollEffect = (header) =>{
+        window.onscroll = function(){
+            "use strict";
+        if (document.body.scrollTop >= 76 || document.documentElement.scrollTop >= 76) {
+            header.classList.add("bk-light");
+            header.classList.remove("bk-transparent");
+        } else {
+            header.classList.add("bk-transparent");
+            header.classList.remove("bk-light");
+        }
+        }
+    }
+
+}
+
+new HeaderAnimation(".av-header-v1")
+
 
 class Modal{
 
-    constructor(button, close, modalBk, form){
-        this.modalBkProps = modalBk
+    constructor(form){
         this.formProps = form
         this.button = document.querySelector(`menu`)
         this.close = document.querySelector(`.close-btn`)
@@ -40,15 +62,6 @@ class Modal{
         },300)
         
     }
-    
-
-}
-
-const bkModal = {
-    div: ".modal-bk",
-    start: "modal-bk-open",
-    end: "modal-bk-close",
-    miliSecond: 300
 }
 
 const sideNav = {
@@ -58,4 +71,4 @@ const sideNav = {
     miliSecond: 300
 }
 
-new Modal("menu",".close-btn",bkModal, sideNav)
+new Modal(sideNav)

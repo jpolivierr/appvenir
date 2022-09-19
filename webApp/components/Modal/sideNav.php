@@ -1,32 +1,24 @@
 <?php (function(){ ob_start(); ?>
- <article class="column-1x side-navigation av-padding-around-1x" >
+ <article class="column-1x side-navigation bk-dark av-padding-around-1x" >
       <span class="close-btn">+</span>
       <div class="container">
-            <section>
-                <figure>
-                <img src="Media/images/mhilogos.png" alt="">
-            </figure>
-            </section>
-            
-            <section >
+      <section style="margin-bottom: 2rem;" >
                     <h4>Navigation</h4>
                     <ul>
-                    <a href="/"><li>Home</li></a>
-                        <a href="/about"><li>About Us</li></a>
-                        <a href="/faq"><li>FAQ</li></a>
-                        <a href="/volunteer"><li>Volunteer</li></a>
-                        <a href="/contact"><li>Contact Us</li></a>
+                        <a href="/"><li>Home</li></a>
+                        <a href="/skills"><li>Skills</li></a>
+                        <a href="/projects"><li>Projects</li></a>
+                        <a href="/contact"><li>Contact</li></a>
                      </ul>
             </section>
             <section >
-                    <h4>Contact Us</h4>
-                     <ul>
-                        <a><li>18680 NE 2nd Ave</li></a>
-                        <a><li>Miami, Fl, 33179</li></a>
-                        <a><li>info@ourmhi.org</li></a>
-                        <a><li>ourmhi.org</li></a>
+            <h4>Contact</h4>
+                    <ul>
+                        <a href="/"><li>789-489-4984</li></a>
+                        <a href="/skills"><li>test@gmail.com</li></a>
                      </ul>
             </section>
+        </div>
         </div>
     </article>
     

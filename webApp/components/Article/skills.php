@@ -1,5 +1,5 @@
 <?php (function(){ ob_start(); ?>
- <article class=" skills column-1x-center  av-padding-1x">
+ <article id="skills" class=" skills column-1x-center  av-padding-1x">
         <div class="container">
                   <h2>Technologies Use</h2>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci eum corrupti quis omnis soluta et fugit atque voluptatibus eveniet, voluptates ducimus odio quae facilis ratione velit porro vitae minima voluptate?</p>   
