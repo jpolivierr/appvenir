@@ -15,6 +15,10 @@
                         <ul>
                            <span>Back End:</span>
                             <li>Java</li>
+                        </ul>
+                        <ul>
+                        <ul>
+                           <span>Database:</span>
                             <li>SQL</li>
                         </ul>
                         <ul>
