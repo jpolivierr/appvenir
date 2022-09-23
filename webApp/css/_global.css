@@ -17,7 +17,7 @@ START: GLOBAL
 
     --input-background: #f1f3f4;
     
-    --shadow :  0px 15px 20px -5px #05050581;
+    --shadow :  0px 0px 20px #26313581;
     --shadow-hard: 0px 0px 79px 20px rgba(179, 182, 185, 0.356);
     --shadow-soft : 10px 0px 50px -30px #4264889c;
     --shadow-btn: 5px 5px 20px -11px #802f904b;
@@ -47,6 +47,10 @@ START: GLOBAL
     margin: 0;
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 
 body{
     font-family: 'Dancing Script', cursive;
@@ -180,6 +184,10 @@ img{
 }
 .av-padding-bottom-2x{
     padding-bottom: 6rem;
+}
+
+.av-padding-bottom-3x{
+    padding-bottom: 12rem;
 }
 .av-padding-flush-top{
     padding-top: 0rem !important;

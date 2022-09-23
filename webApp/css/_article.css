@@ -22,19 +22,20 @@ START: Article
     width: 100%;
     max-width: 1958px;
     display: grid;
-    grid-template-columns: .8fr 1fr;
-    justify-content: flex-start;
+    grid-template-columns: .6fr 1fr;
+    justify-content: center;
     /* border: 4px solid blue; */
 }
 
 .av-article-v2 div:nth-child(1) figure{
     justify-self: flex-end;
-    max-width: 1100px;
+    max-width: 1500px;
     /* border: 4px solid red; */
 }
 
 .av-article-v2 div:nth-child(1) section{
-    padding-left: 8rem;
+    padding: 0rem 4rem;
+    justify-self: flex-end;
     /* border: 4px solid green; */
 }
 /* 
@@ -48,18 +49,18 @@ START: COLUMNS
 =======================================================
 */
 .columns-reverse div:nth-child(1) {
-    grid-template-columns: 1fr .8fr ;
+    grid-template-columns: 1fr .6fr ;
 }
 
 .columns-reverse div:nth-child(1) figure{
     grid-column-start: 1;
     grid-row-start: 1;
     z-index: 1;
-    max-width: 1100px;
+    max-width: 1500px;
 }
 
 .columns-reverse div:nth-child(1) section{
-    padding-left: 8rem;
+    padding: 0rem 6rem;
 }
 
 

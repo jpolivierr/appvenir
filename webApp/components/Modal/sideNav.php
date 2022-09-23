@@ -5,17 +5,16 @@
       <section style="margin-bottom: 2rem;" >
                     <h4>Navigation</h4>
                     <ul>
-                        <a href="/"><li>Home</li></a>
-                        <a href="/skills"><li>Skills</li></a>
-                        <a href="/projects"><li>Projects</li></a>
-                        <a href="/contact"><li>Contact</li></a>
+                        <a href="#hero"><li class="navLink">Home</li></a>
+                        <a href="#skills"><li class="navLink">Skills</li></a>
+                        <a href="#budget"><li class="navLink">Projects</li></a>
                      </ul>
             </section>
             <section >
             <h4>Contact</h4>
                     <ul>
-                        <a href="/"><li>789-489-4984</li></a>
-                        <a href="/skills"><li>test@gmail.com</li></a>
+                        <a><li>789-489-4984</li></a>
+                        <a><li>test@gmail.com</li></a>
                      </ul>
             </section>
         </div>

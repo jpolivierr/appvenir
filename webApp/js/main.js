@@ -1,48 +1,69 @@
 
-class HeaderAnimation{
-    constructor(header){
-        this.header = document.querySelector(`${header}`)
-        this.scrollEffect(this.header)
+
+
+// Header background effect
+(headerEffect =(headerClass) =>{
+    let header =  document.querySelector(`${headerClass}`)
+    window.onscroll = function(){
+        "use strict";
+    if (document.body.scrollTop >= 76 || document.documentElement.scrollTop >= 76) {
+        header.classList.add("bk-light");
+        header.classList.add("border-bottom");
+        header.classList.remove("bk-transparent");
+    } else {
+        header.classList.add("bk-transparent");
+        header.classList.remove("border-bottom");
+        header.classList.remove("bk-light");
     }
-
-    scrollEffect = (header) =>{
-        window.onscroll = function(){
-            "use strict";
-        if (document.body.scrollTop >= 76 || document.documentElement.scrollTop >= 76) {
-            header.classList.add("bk-light");
-            header.classList.remove("bk-transparent");
-        } else {
-            header.classList.add("bk-transparent");
-            header.classList.remove("bk-light");
-        }
-        }
     }
+})(".av-header-v1");
 
-}
+//active link
+(activeLink =(header, activeClass)=>{
+    let headerDiv = document.querySelector(`${header}`)
+    let navList = headerDiv.querySelector("nav").querySelector("ul").querySelectorAll("li")
+    
+    navList.forEach( link => {
+        link.addEventListener('click',(e)=> addActiveClass(e))
+    })
 
-new HeaderAnimation(".av-header-v1")
+    const addActiveClass=(e)=>{
+        navList.forEach(link => {
+            link.classList.remove(activeClass)
+        })
+         e.target.classList.add(activeClass)
+    }
+})(".av-header-v1","av-active");
 
 
+
+// Modal
 class Modal{
 
-    constructor(form){
+    constructor(open, close, form){
         this.formProps = form
-        this.button = document.querySelector(`menu`)
-        this.close = document.querySelector(`.close-btn`)
+        this.button = document.querySelectorAll(`${open}`)
+        this.close = document.querySelectorAll(`${close}`)
         this.modalBk = document.querySelector(`.modal-bk`)
         this.form = document.querySelector(`${this.formProps.div}`)
         this.registerButton()
     }
 
     registerButton =()=>{
-        this.button.addEventListener('click',(e)=>{
+        this.button.forEach(element => {
+            element.addEventListener('click',()=>{
            this.openModal()
         })
+        })
+       
         this.modalBk.addEventListener('click',()=>{
             this.closeModal()
         })
-        this.close.addEventListener('click',()=>{
+
+        this.close.forEach(element => {
+            element.addEventListener('click',()=>{
             this.closeModal()
+        })
         })
     }
 
@@ -71,4 +92,5 @@ const sideNav = {
     miliSecond: 300
 }
 
-new Modal(sideNav)
+new Modal("menu", ".close-btn", sideNav)
+new Modal("menu", ".navLink", sideNav)

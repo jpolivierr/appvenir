@@ -26,6 +26,7 @@ START: RESPONSIVE
         margin: 0;
         width: 95%;
         margin: auto;
+        padding: 0;
     }
 
     .av-article-v2 div:nth-child(1) figure{
@@ -41,25 +42,10 @@ START: RESPONSIVE
         z-index: 1;
     }
 
-    .hero div:nth-child(1) .desktop{
-        left: 30%;
-        width: 50%;
-        height: 280px;
-        border: 3px solid #191919;
-    }
 
-    .hero div:nth-child(1) .mobile{
-        position: absolute;
-        bottom: 30%;
-        left: 18%;
-        width: 150px;
-        height: 55%;
-        border: 3px solid #191919;
-    }
 
-    .hero div:nth-child(1) figure{
-        height: 450px;
-        /* border: 3px solid red; */
+    #idx div:nth-child(1){
+        grid-template-columns:1fr;
     }
 }
 
@@ -88,6 +74,10 @@ START: RESPONSIVE
         padding: 3rem 0rem !important;
     }
 
+    .av-padding-3x{
+        padding: 6rem 0rem !important;
+    }
+
     .av-padding-flush-bottom{
         padding-bottom: 0rem !important;
     }
@@ -100,6 +90,10 @@ START: RESPONSIVE
 
     .av-padding-top-3x{
         padding-top: 6rem !important;
+    }
+
+    .av-padding-bottom-3x{
+        padding-bottom: 6rem;
     }
 
     /* header */
@@ -178,25 +172,6 @@ START: RESPONSIVE
         background: white;
         clip-path: polygon(0 77%, 100% 66%, 100% 100%, 0% 100%);
         height: 1000px;
-    }
-
-    .hero div:nth-child(1) .desktop{
-        left: 5%;
-        width: 90%;
-        max-width: 350px;
-        height: 200px;
-    }
-
-    .hero div:nth-child(1) .mobile{
-        left: 15%;
-        width: 80px;
-        bottom: -20%;
-        height: 150px;
-    }
-
-    .hero div:nth-child(1) figure{
-        height: 200px;
-        /* border: 3px solid red; */
     }
 
     .shape{

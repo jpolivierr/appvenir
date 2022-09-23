@@ -2,15 +2,15 @@
         <header class="av-header-v1 bk-transparent" >
             <div class="container" >
                 <figure>
-                    <a href="/">
+                    <a href="#hero">
                         <p>APPVENIR</p> 
                     </a>
                 </figure>
                 <nav>
                    <ul>
-                        <a><li class="av-active">Home</li></a>
-                        <a><li>Skills</li></a>
-                        <a><li>Projects</li></a>
+                        <a href="#hero"><li class="av-active">Home</li></a>
+                        <a href="#skills"><li>Skills</li></a>
+                        <a href="#budget"><li>Projects</li></a>
                    </ul>
                 </nav>
                 <section>

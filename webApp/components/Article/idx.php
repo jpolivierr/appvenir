@@ -1,5 +1,5 @@
 <?php (function(){ ob_start(); ?>
- <article class="av-article-v2 av-padding-2x av-padding-flush-bottom">
+ <article id="idx" class="av-article-v2 av-padding-2x av-padding-flush-bottom">
         <div class="container">
             <section >
                     <h2>Real Estate IDX</h2>
@@ -38,7 +38,7 @@
                     
             </section>
             <figure>
-                <img src="media/images/dashboard-mockup-v2.png" alt="">
+                <img src="media/images/laptop-mockup-v2.png" alt="">
             </figure>
         </div>
     </article>

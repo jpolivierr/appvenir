@@ -43,7 +43,7 @@ START: UTIL
    color: var(--dark-text);
    margin-bottom: 1rem;
    line-height: 1.7;
-   max-width: 400px;
+   max-width: 500px;
  }
 
  form legend{
