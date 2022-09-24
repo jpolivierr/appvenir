@@ -1,21 +1,54 @@
 <?php (function(){ ob_start(); ?>
- <article id="skills" class=" skills column-1x-center  av-padding-1x">
+ <article id="skills" class=" skills column-1x-center  av-padding-2x av-padding-top-3x">
         <div class="container">
-                  <h2>Technologies Use</h2>
+              <section>
+                      <h2>Professional skills</h2>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci eum corrupti quis omnis soluta et fugit atque voluptatibus eveniet, voluptates ducimus odio quae facilis ratione velit porro vitae minima voluptate?</p>   
-              <button class="tertiary-btn">VIEW PROJECTS</button>
-              
-            <figure >
-                   <img src="/media/images/skills.png" alt="">
-            </figure>
+              <!-- <button class="tertiary-btn">VIEW PROJECTS</button> -->
+              </section>
+               
+              <section>
+               <h4>
+                     Front end
+                </h4>
+                <p>
+                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis dolorum nemo harum rem ipsam voluptates necessitatibus sint, est sequi aliquam.
+                </p>
+              </section>
+
+              <section>
+               <h4>
+                     Back end
+                </h4>
+                <p>
+                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis dolorum nemo harum rem ipsam voluptates necessitatibus sint, est sequi aliquam.
+                </p>
+              </section>
+
+              <section>
+               <h4>
+                     Server
+                </h4>
+                <p>
+                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis dolorum nemo harum rem ipsam voluptates necessitatibus sint, est sequi aliquam.
+                </p>
+              </section>
+                 
             <!-- <figure >
-                   <img style="height: 55px;" src="/media/images/php.png" alt="">
+                   <img src="/media/images/tech-skills.png" alt="">
+            </figure> -->
+            <!-- <section class="tech-logo">
+            <figure >
+                   <img src="/media/images/Java-Logo.png" alt="">
+            </figure>
+              <figure >
+                   <img src="/media/images/php.png" alt="">
             </figure>
             <figure >
-                   <img style="height: 55px;" src="/media/images/React.png" alt="">
+                   <img src="/media/images/React.png" alt="">
             </figure>
             <figure >
-                   <img style="height:90px"src="/media/images/mysql.png" alt="">
+                   <img src="/media/images/mysql.png" alt="">
             </figure>
             <figure >
                    <img src="/media/images/nginx.png" alt="">
@@ -27,10 +60,10 @@
                    <img src="/media/images/linux.png" alt="">
             </figure>
             <figure >
-                   <img style="height:60px" src="/media/images/bash.png" alt="">
+                   <img  src="/media/images/bash.png" alt="">
             </figure>
             <figure >
-                   <img style="height: 60px;" src="/media/images/js.png" alt="">
+                   <img src="/media/images/js.png" alt="">
             </figure>
             <figure >
                    <img src="/media/images/css.png" alt="">
@@ -40,7 +73,9 @@
             </figure>
             <figure >
                    <img src="/media/images/sass.png" alt="">
-            </figure> -->
+            </figure>
+            </section> -->
+            
         </div>
     </article>
     

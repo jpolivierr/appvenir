@@ -1,5 +1,5 @@
 <?php (function(){ ob_start(); ?>
- <article id="hero" class="av-article-v2 hero sp av-padding-3x bk-main av-padding-bottom-3x">
+ <article id="hero" class="av-article-v2 hero sp av-padding-4x bk-main av-padding-flush-bottom">
         <div class="container">
             <section >
                     <h1 style="margin: 0px;">FULL STACK</h1>
@@ -16,10 +16,12 @@
             </section>
             <figure>
                 <div class="desktop main-shadow">
+                   
                     <img src="media/images/mhi-desktop.png" alt="">
                 </div>
                 
-                <div class="mobile main-shadow">
+                <div class="mobile">
+                    <img src="media/images/phone-shadow.png" alt="">
                     <img src="media/images/mhi-mobile.png" alt="">
                 </div>
             </figure>
