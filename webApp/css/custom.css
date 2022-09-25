@@ -128,7 +128,9 @@ h1 {
     width: 150px;
 }
 
-
+.skills div:nth-child(1) section{
+    position: relative;
+}
 
 .skills div:nth-child(1) h2{
 
@@ -143,6 +145,77 @@ h1 {
 .skills div:nth-child(1) button{
     margin-bottom: 3rem;
 }
+
+.skills i{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--main-color);
+} 
+
+
+.skills section:nth-child(2)::before,
+.skills section:nth-child(3)::before,
+.skills section:nth-child(4)::before{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -30%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+   font-size: .6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.skills section:nth-child(2)::before{
+    content: '1';
+    border: 1px solid var(--main-color);
+    background: white;
+}
+
+.skills section:nth-child(3)::before{
+    content: '2';
+    background-color: var(--main-color);
+    color: white;
+    box-shadow:  0px 5px 7px #56628f7a;
+}
+
+.skills section:nth-child(4)::before{
+    content: '3';
+   border: 1px solid var(--main-color);
+   background: white;
+}
+
+.skills section:nth-child(2)::after,
+.skills section:nth-child(3)::after,
+.skills section:nth-child(4)::after{
+    position: absolute;
+    top: -25.4%;
+    content: '';
+    background-color: #5a3bea1c;
+    height: 1px;
+    z-index: -1;
+}
+
+.skills section:nth-child(2)::after{
+}
+
+.skills section:nth-child(3)::after{
+    left: -50%;
+    right: 0;
+    margin: auto;
+    width: 200%;
+}
+
+.skills section:nth-child(4)::after{
+
+}
+
+
 
 .shape{
     position: absolute;

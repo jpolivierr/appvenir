@@ -36,7 +36,8 @@ START: UTIL
  }
 
  h4{
-   margin-bottom: .3rem;
+  font-size: 1.3rem;
+   margin-bottom: 1rem;
  }
 
  p,legend{

@@ -303,7 +303,7 @@ START: Article
 
 .av-article-v2 div:nth-child(1) section{
     padding: 0rem 4rem;
-    justify-self: flex-end;
+    justify-self: center;
     /* border: 4px solid green; */
 }
 /* 
@@ -329,6 +329,7 @@ START: COLUMNS
 
 .columns-reverse div:nth-child(1) section{
     padding: 0rem 6rem;
+    padding-left: 2rem;
 }
 
 
@@ -360,6 +361,29 @@ START: COLUMNS
 
 .column-top div:nth-child(1){
     align-items: flex-start;
+}
+
+.column-1x-3x-center div:nth-child(1){
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+}
+
+.column-1x-3x-center div:nth-child(1) section:nth-child(1){
+    grid-column: 1 / 4;
+    justify-self: center;
+    margin-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+}
+
+.column-1x-3x-center div:nth-child(1) section {
+    text-align: center;
+    padding: 2rem;
+    padding-top: 3rem;
 }
 /* 
 =======================================================
@@ -417,10 +441,10 @@ START: GLOBAL
 
     --input-background: #f1f3f4;
     
-    --shadow :  0px 0px 40px #56628f62;
+    --shadow :  0px 20px 40px #56628f2c;
     --shadow-hard: 0px 10px 79px 20px rgba(179, 182, 185, 0.356);
     --shadow-soft : 10px 0px 50px -30px #4264889c;
-    --shadow-btn: 5px 5px 20px -11px #802f904b;
+    --shadow-btn: 5px 5px 20px -11px #56628f2c;
   
     --light-blue: #f9f9ff;
     --text-color: #142149;
@@ -664,7 +688,8 @@ START: UTIL
  }
 
  h4{
-   margin-bottom: .3rem;
+  font-size: 1.3rem;
+   margin-bottom: 1rem;
  }
 
  p,legend{
@@ -848,7 +873,9 @@ h1 {
     width: 150px;
 }
 
-
+.skills div:nth-child(1) section{
+    position: relative;
+}
 
 .skills div:nth-child(1) h2{
 
@@ -863,6 +890,77 @@ h1 {
 .skills div:nth-child(1) button{
     margin-bottom: 3rem;
 }
+
+.skills i{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--main-color);
+} 
+
+
+.skills section:nth-child(2)::before,
+.skills section:nth-child(3)::before,
+.skills section:nth-child(4)::before{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -30%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+   font-size: .6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.skills section:nth-child(2)::before{
+    content: '1';
+    border: 1px solid var(--main-color);
+    background: white;
+}
+
+.skills section:nth-child(3)::before{
+    content: '2';
+    background-color: var(--main-color);
+    color: white;
+    box-shadow:  0px 5px 7px #56628f7a;
+}
+
+.skills section:nth-child(4)::before{
+    content: '3';
+   border: 1px solid var(--main-color);
+   background: white;
+}
+
+.skills section:nth-child(2)::after,
+.skills section:nth-child(3)::after,
+.skills section:nth-child(4)::after{
+    position: absolute;
+    top: -25.4%;
+    content: '';
+    background-color: #5a3bea1c;
+    height: 1px;
+    z-index: -1;
+}
+
+.skills section:nth-child(2)::after{
+}
+
+.skills section:nth-child(3)::after{
+    left: -50%;
+    right: 0;
+    margin: auto;
+    width: 200%;
+}
+
+.skills section:nth-child(4)::after{
+
+}
+
+
 
 .shape{
     position: absolute;
@@ -1239,7 +1337,51 @@ START: RESPONSIVE
         row-gap: 2rem;
     }
 
+    .column-1x-3x-center div:nth-child(1){
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .column-1x-3x-center div:nth-child(1) section:nth-child(1){
+        grid-column: 1;
+        justify-self: center;
+    
+    }
+    
+    .column-1x-3x-center div:nth-child(1) section section:nth-child(1){
+        text-align: center;
+        padding: 0rem;
+    }
+
     /* special */
+
+    .skills section:nth-child(2)::before,
+    .skills section:nth-child(3)::before,
+    .skills section:nth-child(4)::before{
+        display: none !important;
+    }
+
+    .skills section:nth-child(2)::after,
+    .skills section:nth-child(3)::after,
+    .skills section:nth-child(4)::after{
+        display: none !important;
+    }
+
+    .column-1x-3x-center div:nth-child(1) section{
+        text-align: left;
+    }
+
+    .column-1x-3x-center div:nth-child(1) section{
+        padding: 3rem 1rem;
+    }
+
+    .column-1x-3x-center div:nth-child(1) section:nth-child(1){
+        align-items: flex-start;
+    }
+
+    .column-1x-3x-center div:nth-child(1) section:nth-child(1){
+        margin-bottom: 0rem;
+    }
 
     .shape{
         position: absolute;

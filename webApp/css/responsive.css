@@ -179,7 +179,51 @@ START: RESPONSIVE
         row-gap: 2rem;
     }
 
+    .column-1x-3x-center div:nth-child(1){
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .column-1x-3x-center div:nth-child(1) section:nth-child(1){
+        grid-column: 1;
+        justify-self: center;
+    
+    }
+    
+    .column-1x-3x-center div:nth-child(1) section section:nth-child(1){
+        text-align: center;
+        padding: 0rem;
+    }
+
     /* special */
+
+    .skills section:nth-child(2)::before,
+    .skills section:nth-child(3)::before,
+    .skills section:nth-child(4)::before{
+        display: none !important;
+    }
+
+    .skills section:nth-child(2)::after,
+    .skills section:nth-child(3)::after,
+    .skills section:nth-child(4)::after{
+        display: none !important;
+    }
+
+    .column-1x-3x-center div:nth-child(1) section{
+        text-align: left;
+    }
+
+    .column-1x-3x-center div:nth-child(1) section{
+        padding: 3rem 1rem;
+    }
+
+    .column-1x-3x-center div:nth-child(1) section:nth-child(1){
+        align-items: flex-start;
+    }
+
+    .column-1x-3x-center div:nth-child(1) section:nth-child(1){
+        margin-bottom: 0rem;
+    }
 
     .shape{
         position: absolute;
