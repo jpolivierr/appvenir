@@ -646,6 +646,12 @@ img{
 .main-shadow{
     box-shadow: var(--shadow);
 }
+
+.error-msg{
+    color: rgb(235, 54, 54);
+    font-size: .8rem;
+    padding: .6rem 0rem;
+}
 /* 
 =======================================================
 END: GLOBAL

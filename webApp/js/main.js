@@ -94,3 +94,70 @@ const sideNav = {
 
 new Modal("menu", ".close-btn", sideNav)
 new Modal("menu", ".navLink", sideNav)
+
+class FormValidation{
+
+    constructor(form){
+        this.form = document.querySelector(form)
+        this.formBtn = this.form.querySelector('button')
+        this.fields = this.form.querySelectorAll('fieldset')
+        this.error = []
+    }
+
+    getInput(){
+        this.fields.forEach((field)=>{
+
+            let error = !field.querySelector('.error-msg') ? null : field.querySelector('.error-msg').remove()
+
+            let label = !field.querySelector('label') ? null : field.querySelector('label').outerText 
+
+            let inputValue = !field.querySelector('input') ? null : field.querySelector('input').value
+
+            let type = !field.querySelector('[type]') ? null : field.querySelector('[type]').type
+
+            let name = !field.querySelector('[name]') ? null : field.querySelector('[name]').name
+
+            let textArea = !field.querySelector('textarea') ? null : field.querySelector('textarea').value
+
+            this.empty(field, label, inputValue, textArea)
+                
+         }) 
+    }
+
+    empty(field,label,inputValue, textArea){
+        if(inputValue !== null ){
+            if(!inputValue.trim()){
+            field.innerHTML += `<span class="error-msg">${label} is required</span>`
+          }
+        }
+        if(textArea !== null ){
+            if(!textArea.trim()){
+            field.innerHTML += `<span class="error-msg">${label} is required</span>`
+          }
+        }
+    }
+
+
+    submit(e){
+        e.preventDefault()
+        this.getInput()
+    }
+
+    // get(value){
+    //     if(!value){
+    //         return null
+    //     }else{
+    //         return value
+    //     }
+    // }
+
+    init(){
+        this.formBtn.addEventListener('click',(e)=>{
+            this.submit(e)
+        })
+    }
+
+}
+
+const formValidation = new FormValidation("#contactForm")
+formValidation.init()

@@ -20,20 +20,20 @@
                      </ul>                   
             </section>
             <figure>
-            <form action="">
+            <form id="contactForm" action="">
             <h2>Send me a message</h2>
             <p>You can reach me anytime via gh@gmail.com</p>
                         <fieldset>
                             <label>Full Name</label>
-                            <input type="text"/>
+                            <input name="name" type="text"/>
                         </fieldset>
                         <fieldset>
                             <label>Email</label>
-                            <input type="email"/>
+                            <input name="email" type="email"/>
                         </fieldset>
                         <fieldset>
                             <label>Phone</label>
-                            <input type="email"/>
+                            <input name="phone" type="text"/>
                         </fieldset>
                         <fieldset>
                             <label>Message</label>
