@@ -8,6 +8,7 @@
                         <a href="#hero"><li class="navLink">Home</li></a>
                         <a href="#skills"><li class="navLink">Skills</li></a>
                         <a href="#budget"><li class="navLink">Projects</li></a>
+                        <a href="#contact"><li class="navLink">Contact</li></a>
                      </ul>
             </section>
             <section >

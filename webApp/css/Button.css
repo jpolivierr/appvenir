@@ -89,7 +89,7 @@ button{
 }
 
 .tertiary-btn{
-    background: #5a3bea;;
+    background: var(--main-color);
     color: white;
     border-radius: 0px;
     transition: .3s ease-in-out;

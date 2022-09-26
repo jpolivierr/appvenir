@@ -9,5 +9,6 @@
     mount("Article","budget", null);
     mount("Article","idx", null);
     mount("Article","mhi", null);
+    mount("Article","contact", null);
     mount("Navigation","bottom", null);
     addFooter("footer");

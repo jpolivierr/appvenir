@@ -7,6 +7,7 @@
                         <a href="#hero"><li>Home</li></a>
                         <a href="#skills"><li>Skills</li></a>
                         <a href="#budget"><li>Projects</li></a>
+                        <a href="#contact"><li>Contact</li></a>
                      </ul>
             </section>
             <section >

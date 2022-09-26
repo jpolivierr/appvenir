@@ -226,6 +226,30 @@ h1 {
     height: 800px;
 }
 
+.contact ul {
+    margin-top: 3rem;
+}
+
+.contact ul li{
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    justify-items: flex-start;
+    column-gap: 2rem;
+    row-gap: .5rem;
+    font-weight: 600;
+}
+
+.contact ul li span{
+    grid-column: 2 / 3;
+    font-weight: 400;
+}
+
+.contact ul li i{
+    color: var(--main-color);
+    font-size: 1.3rem;
+}
+
 .project-content{
     margin-bottom: 2rem;
     display: flex;
@@ -269,7 +293,7 @@ h1 {
 
 .project-content span{
     font-weight: 600;
-    color: #5a3bea;
+    color: var(--main-color);
     margin-right: .6rem;
     font-size: .8rem;
 }

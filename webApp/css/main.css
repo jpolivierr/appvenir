@@ -89,7 +89,7 @@ button{
 }
 
 .tertiary-btn{
-    background: #5a3bea;;
+    background: var(--main-color);
     color: white;
     border-radius: 0px;
     transition: .3s ease-in-out;
@@ -454,7 +454,7 @@ START: GLOBAL
     --light-silver: #ebecee;
   
     /* --main-color : #4918cf; */
-    --main-color : #5a3bea;
+    --main-color : #5a3bea; 
     --secondary-color: #2c2eff;
     --tertiary-color: #ffd212;
     --error-color: #ff000014;
@@ -672,7 +672,7 @@ START: UTIL
 }
 
  h2{
-   font-size: 3rem;
+   font-size: 2rem;
    margin-bottom: 1rem;
    /* max-width: 600px; */
    line-height: 1.3;
@@ -692,7 +692,7 @@ START: UTIL
    margin-bottom: 1rem;
  }
 
- p,legend{
+ p,legend, label{
    color: var(--dark-text);
    margin-bottom: 1rem;
    line-height: 1.7;
@@ -719,13 +719,14 @@ START: UTIL
  form button{
    margin-top: .5rem;
    width: 100%;
+   padding: 1.2rem 0rem !important
  }
 
  input, textarea{
    border: none;
    outline: none;
    padding: 1rem .7rem;
-   border-radius: 5px;
+   border-radius: 0px;
    background: var(--light-silver);
 
  }
@@ -971,6 +972,30 @@ h1 {
     height: 800px;
 }
 
+.contact ul {
+    margin-top: 3rem;
+}
+
+.contact ul li{
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    justify-items: flex-start;
+    column-gap: 2rem;
+    row-gap: .5rem;
+    font-weight: 600;
+}
+
+.contact ul li span{
+    grid-column: 2 / 3;
+    font-weight: 400;
+}
+
+.contact ul li i{
+    color: var(--main-color);
+    font-size: 1.3rem;
+}
+
 .project-content{
     margin-bottom: 2rem;
     display: flex;
@@ -1014,7 +1039,7 @@ h1 {
 
 .project-content span{
     font-weight: 600;
-    color: #5a3bea;
+    color: var(--main-color);
     margin-right: .6rem;
     font-size: .8rem;
 }
@@ -1224,11 +1249,15 @@ START: RESPONSIVE
     .av-padding-2x{
         padding: 4rem 0rem !important;
     }
+    h1{
+        font-size: 2rem;
+    }
   /* util */
     h2{
-        font-size: 1.9rem !important;
+        font-size: 1.5rem !important;
     }
-    p{
+    p,legend,label{
+        font-size: .9rem;
         max-width: 100% !important;
     }
     /* padding */
@@ -1263,7 +1292,7 @@ START: RESPONSIVE
     }
 
     .av-padding-4x{
-        padding: 9rem 0rem;
+        padding: 5rem 0rem;
     }
 
     .av-padding-bottom-3x{
@@ -1300,7 +1329,6 @@ START: RESPONSIVE
 
     .av-article-v1 {
         padding: 3rem 0rem;
-        padding: .8rem;
         margin-bottom: .8rem;
     }
     .av-article-v1 div:nth-child(1){
@@ -1309,8 +1337,8 @@ START: RESPONSIVE
 
     .av-article-v1 div:nth-child(1) figure{
         grid-column-start: 1;
-        grid-row-start: 1;
-        margin-bottom: 3rem;
+        grid-row-start: 2;
+        margin-top: 3rem;
     }
 
     .av-article-v2 div:nth-child(1) section{
