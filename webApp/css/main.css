@@ -288,7 +288,7 @@ START: Article
 
 .av-article-v2 div:nth-child(1){
     width: 100%;
-    max-width: 1958px;
+    max-width: 1658px;
     display: grid;
     grid-template-columns: .6fr 1fr;
     justify-content: center;
@@ -483,13 +483,13 @@ body{
 
 .container{
     width: 80%;
-    max-width: 1953px;
+    max-width: 1658px;
     margin: auto;
 }
 
 .container-full{
     width: 100%;
-    max-width: 1953px;
+    max-width: 1658px;
     margin: auto;
 }
 
@@ -678,7 +678,7 @@ START: UTIL
 }
 
  h2{
-   font-size: 2rem;
+   font-size: 3rem;
    margin-bottom: 1rem;
    /* max-width: 600px; */
    line-height: 1.3;
@@ -703,6 +703,7 @@ START: UTIL
    margin-bottom: 1rem;
    line-height: 1.7;
    max-width: 430px;
+   font-weight: 500;
  }
 
  form legend{

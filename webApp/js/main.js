@@ -102,54 +102,113 @@ class FormValidation{
         this.formBtn = this.form.querySelector('button')
         this.fields = this.form.querySelectorAll('fieldset')
         this.error = []
+        this.jsonFormData = {}
     }
 
-    getInput(){
+    validateInput(){
         this.fields.forEach((field)=>{
 
             let error = !field.querySelector('.error-msg') ? null : field.querySelector('.error-msg').remove()
 
             let label = !field.querySelector('label') ? null : field.querySelector('label').outerText 
 
-            let inputValue = !field.querySelector('input') ? null : field.querySelector('input').value
-
             let type = !field.querySelector('[type]') ? null : field.querySelector('[type]').type
 
             let name = !field.querySelector('[name]') ? null : field.querySelector('[name]').name
 
+            let inputValue = !field.querySelector('input') ? null : field.querySelector('input').value
+
+            
+
             let textArea = !field.querySelector('textarea') ? null : field.querySelector('textarea').value
 
-            this.empty(field, label, inputValue, textArea)
-                
+            this.addToFormData(name,inputValue, textArea)
+            
+            if(name !== "phone"){
+         
+                this.empty(field, label, inputValue, textArea)
+                this.validateEmail(field, type, inputValue )
+            }
+        
          }) 
+          return this.error
+    }
+
+    addToFormData(name,inputValue,textArea){
+        console.log(textArea)
+        if(textArea !== null && textArea){
+            this.jsonFormData["message"] = textArea
+        }
+        if(!name && !inputValue){
+            return
+        }else{
+            this.jsonFormData[name] = inputValue
+        }
     }
 
     empty(field,label,inputValue, textArea){
-        if(inputValue !== null ){
+        if(inputValue !== null){
             if(!inputValue.trim()){
             field.innerHTML += `<span class="error-msg">${label} is required</span>`
+            this.error.push(true)
           }
         }
         if(textArea !== null ){
             if(!textArea.trim()){
             field.innerHTML += `<span class="error-msg">${label} is required</span>`
+            this.error.push(true)
           }
         }
     }
 
+    validateEmail(field, type, inputValue){
+        if(type === "email"){
+            if(inputValue !== null && inputValue.trim() !== ""){
+            if(!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(inputValue.trim())){
+                field.innerHTML += `<span class="error-msg">Not a valid email</span>`
+                this.error.push(true)
+          }
+         }
+        }
+    }
+
+    clearField(){
+
+        this.fields.forEach((field)=>{
+        !field.querySelector('input') ? null : field.querySelector('input').value = ""
+
+        !field.querySelector('textarea') ? null : field.querySelector('textarea').value = ""
+
+        })
+
+    }
+
+    async send(){
+            try{
+                const formData = new FormData()
+                console.log(this.jsonFormData)
+                // const config = {
+                           
+                // }
+
+                // let res = fetch("http://localhost:50",config)
+
+            }catch(error){
+
+            }
+    }
 
     submit(e){
         e.preventDefault()
-        this.getInput()
+        this.error = []
+        this.validateInput()
+        if(this.error.length === 0){
+            console.log("submitted..")
+            this.send()
+            this.clearField()
+        }
+        
     }
-
-    // get(value){
-    //     if(!value){
-    //         return null
-    //     }else{
-    //         return value
-    //     }
-    // }
 
     init(){
         this.formBtn.addEventListener('click',(e)=>{

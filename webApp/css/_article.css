@@ -20,7 +20,7 @@ START: Article
 
 .av-article-v2 div:nth-child(1){
     width: 100%;
-    max-width: 1958px;
+    max-width: 1658px;
     display: grid;
     grid-template-columns: .6fr 1fr;
     justify-content: center;
