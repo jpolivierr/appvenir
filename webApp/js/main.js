@@ -125,8 +125,8 @@ class FormValidation{
             
             if(name !== "phone"){
          
-                // this.empty(field, label, inputValue, textArea)
-                // this.validateEmail(field, type, inputValue )
+                this.empty(field, label, inputValue, textArea)
+                this.validateEmail(field, type, inputValue )
             }
         
          }) 
@@ -184,10 +184,15 @@ class FormValidation{
     addErrorFromServer(data){
         this.fields.forEach((field)=>{
             let name = !field.querySelector('[name]') ? null : field.querySelector('[name]').name
-           
+            let textArea = !field.querySelector('textarea') ? null : field.querySelector('textarea').value
             if(name !== null){
                 if (data.hasOwnProperty(name)){
                     field.innerHTML += `<span class="error-msg">${data[name]}</span>`
+                }
+            }
+            if(textArea !== null){
+                if (data.hasOwnProperty("message")){
+                    field.innerHTML += `<span class="error-msg">${data["message"]}</span>`
                 }
             }
             
@@ -206,14 +211,13 @@ class FormValidation{
                 }
 
                 const resp = await fetch(url,config)
+                console.log(resp.status)
                 if(resp.status === 400){
                     const data = await resp.json()
                     this.addErrorFromServer(data)
                 }else if(resp.status === 200){
                     console.log("message sent")
                 }
-                // const data = await resp.json()
-                // console.log(data)
 
             }catch(error){
                 console.log(error)
@@ -227,7 +231,7 @@ class FormValidation{
         if(this.error.length === 0){
             
             this.send()
-            // this.clearField()
+            this.clearField()
             console.log("submitted..")
         }
         
