@@ -119,7 +119,6 @@ class FormValidation{
             let inputValue = !field.querySelector('input') ? null : field.querySelector('input').value
 
             
-
             let textArea = !field.querySelector('textarea') ? null : field.querySelector('textarea').value
 
             this.addToFormData(name,inputValue, textArea)
@@ -135,7 +134,6 @@ class FormValidation{
     }
 
     addToFormData(name,inputValue,textArea){
-        console.log(textArea)
         if(textArea !== null && textArea){
             this.jsonFormData["message"] = textArea
         }
@@ -186,15 +184,20 @@ class FormValidation{
     async send(){
             try{
                 const formData = new FormData()
-                console.log(this.jsonFormData)
-                // const config = {
-                           
-                // }
+                formData.append("data", JSON.stringify(this.jsonFormData))
 
-                // let res = fetch("http://localhost:50",config)
+                const url = "http://localhost:55/"
+                const config = {
+                           method: "POST",
+                           body: formData
+                }
+
+                const resp = await fetch(url,config)
+                const data = await resp.text()
+                console.log(data)
 
             }catch(error){
-
+                console.log(error)
             }
     }
 
@@ -203,9 +206,10 @@ class FormValidation{
         this.error = []
         this.validateInput()
         if(this.error.length === 0){
-            console.log("submitted..")
+            
             this.send()
-            this.clearField()
+            // this.clearField()
+            console.log("submitted..")
         }
         
     }
