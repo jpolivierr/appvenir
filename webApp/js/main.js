@@ -108,7 +108,7 @@ class FormValidation{
     validateInput(){
         this.fields.forEach((field)=>{
 
-            let error = !field.querySelector('.error-msg') ? null : field.querySelector('.error-msg').remove()
+            !field.querySelector('.error-msg') ? null : field.querySelector('.error-msg').remove()
 
             let label = !field.querySelector('label') ? null : field.querySelector('label').outerText 
 
@@ -125,8 +125,8 @@ class FormValidation{
             
             if(name !== "phone"){
          
-                this.empty(field, label, inputValue, textArea)
-                this.validateEmail(field, type, inputValue )
+                // this.empty(field, label, inputValue, textArea)
+                // this.validateEmail(field, type, inputValue )
             }
         
          }) 
@@ -134,7 +134,7 @@ class FormValidation{
     }
 
     addToFormData(name,inputValue,textArea){
-        if(textArea !== null && textArea){
+        if(textArea !== null){
             this.jsonFormData["message"] = textArea
         }
         if(!name && !inputValue){
@@ -181,6 +181,19 @@ class FormValidation{
 
     }
 
+    addErrorFromServer(data){
+        this.fields.forEach((field)=>{
+            let name = !field.querySelector('[name]') ? null : field.querySelector('[name]').name
+           
+            if(name !== null){
+                if (data.hasOwnProperty(name)){
+                    field.innerHTML += `<span class="error-msg">${data[name]}</span>`
+                }
+            }
+            
+        })
+    }
+
     async send(){
             try{
                 const formData = new FormData()
@@ -193,8 +206,14 @@ class FormValidation{
                 }
 
                 const resp = await fetch(url,config)
-                const data = await resp.text()
-                console.log(data)
+                if(resp.status === 400){
+                    const data = await resp.json()
+                    this.addErrorFromServer(data)
+                }else if(resp.status === 200){
+                    console.log("message sent")
+                }
+                // const data = await resp.json()
+                // console.log(data)
 
             }catch(error){
                 console.log(error)
