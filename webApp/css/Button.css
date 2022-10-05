@@ -16,7 +16,7 @@ button{
 
 .main-btn{
     position: relative;
-    background: #ffffff1f;
+    background: var(--custom-color-1);
     color: white;
     font-weight: 500;
     border-radius: 0px;
@@ -109,6 +109,7 @@ button{
 .btn-container{
     display: flex;
     gap: 1rem;
+    margin-top: 2rem;
 }
 
 

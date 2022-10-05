@@ -1,5 +1,5 @@
 <?php (function() { ob_start() ;?>
-        <header class="av-header-v1 bk-transparent" >
+        <header class="av-header-v1 bk-main border-bottom" >
             <div class="container" >
                 <figure>
                     <a href="#hero">

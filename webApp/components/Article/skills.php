@@ -1,5 +1,5 @@
 <?php (function(){ ob_start(); ?>
- <article id="skills" class=" skills column-1x-3x-center av-padding-2x av-padding-top-2x">
+ <article id="skills" class=" skills column-1x-3x-center bk-main av-padding-1x av-padding-bottom-3x ">
         <div class="container">
               <section>
                       <h2>Professional skills</h2>
@@ -17,7 +17,7 @@
                 </p>
               </section>
 
-              <section class="main-shadow">
+              <section class="back-end">
               <i class="fa-solid fa-database"></i>
                <h4>
                      Back end
@@ -25,6 +25,8 @@
                 <p>
                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis dolorum nemo harum rem ipsam voluptates necessitatibus sint, est sequi aliquam.
                 </p>
+                <div class="b-left"></div>
+                <div class="b-right"></div>
               </section>
 
               <section><i class="fa-solid fa-server"></i>

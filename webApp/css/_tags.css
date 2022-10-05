@@ -14,13 +14,14 @@ START: UTIL
  }
 
  h1{
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  max-width: 600px;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  max-width: 750px;
+  line-height: 1.2;
 }
 
  h2{
-   font-size: 3rem;
+   font-size: 4.5rem;
    margin-bottom: 1rem;
    /* max-width: 600px; */
    line-height: 1.3;
@@ -40,12 +41,13 @@ START: UTIL
    margin-bottom: 1rem;
  }
 
- p,legend, label{
+ p,legend, label, a{
    color: var(--dark-text);
    margin-bottom: 1rem;
    line-height: 1.7;
-   max-width: 430px;
+   max-width: 600px;
    font-weight: 500;
+   font-size: 1.2rem;
  }
 
  form legend{

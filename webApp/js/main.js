@@ -2,21 +2,17 @@
 
 
 // Header background effect
-(headerEffect =(headerClass) =>{
-    let header =  document.querySelector(`${headerClass}`)
-    window.onscroll = function(){
-        "use strict";
-    if (document.body.scrollTop >= 76 || document.documentElement.scrollTop >= 76) {
-        header.classList.add("bk-light");
-        header.classList.add("border-bottom");
-        header.classList.remove("bk-transparent");
-    } else {
-        header.classList.add("bk-transparent");
-        header.classList.remove("border-bottom");
-        header.classList.remove("bk-light");
-    }
-    }
-})(".av-header-v1");
+// (headerEffect =(headerClass) =>{
+//     let header =  document.querySelector(`${headerClass}`)
+//     window.onscroll = function(){
+//         "use strict";
+//     if (document.body.scrollTop >= 76 || document.documentElement.scrollTop >= 76) {
+//         header.classList.add("bk-main");
+//     } else {
+//         header.classList.remove("bk-main");
+//     }
+//     }
+// })(".av-header-v1");
 
 //active link
 (activeLink =(header, activeClass)=>{

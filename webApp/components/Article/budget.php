@@ -1,5 +1,5 @@
 <?php (function(){ ob_start(); ?>
- <article id="budget" class="av-article-v2 columns-reverse bk-light av-padding-3x av-padding-flush-bottom">
+ <article id="budget" class="av-article-v2 columns-reverse av-padding-3x av-padding-flush-bottom">
         <div class="container">
             <section >
                     <h2>Green Budget</h2>
