@@ -1,8 +1,8 @@
 <?php (function(){ ob_start(); ?>
- <article id="mhi" class="av-article-v2 columns-reverse bk-main sp av-padding-2x">
+ <article id="mhi" class="av-article-v1 columns-reverse bk-main sp av-padding-3x">
         <div class="container">
-            <section style="align-self: center;" >
-                    <h2>Green Budget</h2>
+            <section style="justify-self: flex-end;" >
+                    <h2>MHI</h2>
                     <p>We are a nonprofit organization dedicated to provide not only an educational pathways for the youth in Haiti but also to enrich their lives and communities through training and education beyond school.</p>
                     <h3 class="h3-design">Technologies</h3>
                     <div class="project-content">
@@ -15,12 +15,9 @@
                         <ul>
                            <span>Back End:</span>
                             <li>Java</li>
-                        </ul>
-                        <ul>
-                        <ul>
-                           <span>Database:</span>
                             <li>SQL</li>
                         </ul>
+                        <ul>
                         <ul>
                             <span>Server:</span>
                             <li>Nginx</li>

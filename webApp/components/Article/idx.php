@@ -1,11 +1,11 @@
 <?php (function(){ ob_start(); ?>
- <article id="idx" class="av-article-v2 av-padding-2x av-padding-flush-bottom">
+ <article id="idx" class="av-article-v2 av-padding-2x column-1x-center center-content av-padding-flush-bottom">
         <div class="container">
             <section >
                     <h2>Real Estate IDX</h2>
-                    <p>We are a nonprofit organization dedicated to provide not only an educational pathways for the youth in Haiti but also to enrich their lives and communities through training and education beyond school.</p>
-                    <h3 class="h3-design">Technologies</h3>
-                    <div class="project-content">
+                    <p>We are a nonprofit organization dedicated to provide not only an educational pathways for the youth </p>
+                    <!-- <h3 class="h3-design">Technologies</h3> -->
+                    <!-- <div class="project-content">
                         <ul>
                             <span>Client:</span>
                             <li>React</li>
@@ -15,19 +15,16 @@
                         <ul>
                            <span>Back End:</span>
                             <li>Java</li>
-                        </ul>
-                        <ul>
-                        <ul>
-                           <span>Database:</span>
                             <li>SQL</li>
                         </ul>
+                        <ul>
                         <ul>
                             <span>Server:</span>
                             <li>Nginx</li>
                             <li>Tomcat</li>
                         </ul>
-                    </div>
-                    <div class="btn-container">
+                    </div> -->
+                    <div style="margin-bottom: 1rem"class="btn-container">
                         <button class="tertiary-btn">
                         VISIT SITE
                     </button>
@@ -38,7 +35,7 @@
                     
             </section>
             <figure>
-                <img src="media/images/laptop-mockup-v2.png" alt="">
+                <img src="media/images/laptop-2.jpg" alt="">
             </figure>
         </div>
     </article>

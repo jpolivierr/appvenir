@@ -1,10 +1,10 @@
 <?php (function(){ ob_start(); ?>
- <article id="budget" class="av-article-v2 columns-reverse av-padding-3x av-padding-flush-bottom">
+ <article id="budget" class="av-article-v1 budget columns-reverse av-padding-3x bk-dark">
         <div class="container">
-            <section >
+            <section style="justify-self: flex-end;">
                     <h2>Green Budget</h2>
                     
-                    <p>We are a nonprofit organization dedicated to provide not only an educational pathways for the youth in Haiti but also to enrich their lives and communities through training and education beyond school.</p>
+                    <p>We are a nonprofit organization dedicated to provide not only an educational pathways for the youth in Haiti</p>
                     <h3 class="h3-design">Technologies</h3>
                     <div class="project-content">
                         <ul>
@@ -16,12 +16,9 @@
                         <ul>
                            <span>Back End:</span>
                             <li>Java</li>
-                        </ul>
-                        <ul>
-                        <ul>
-                           <span>Database:</span>
                             <li>SQL</li>
                         </ul>
+                        <ul>
                         <ul>
                             <span>Server:</span>
                             <li>Nginx</li>
@@ -32,14 +29,14 @@
                         <button class="tertiary-btn">
                         VISIT SITE
                     </button>
-                    <button class="secondary-btn">
+                    <button class="main-btn">
                         GIT HUB
                     </button>
                     </div>
                     
             </section>
             <figure>
-                <img src="media/images/dashboard-mockup-v2.png" alt="">
+                <img src="media/images/dashboard.jpg" alt="">
             </figure>
         </div>
     </article>

@@ -1,7 +1,7 @@
 <?php (function(){ ob_start(); ?>
  <article id="skills" class=" skills column-1x-3x-center bk-main av-padding-1x av-padding-bottom-3x ">
         <div class="container">
-              <section>
+              <section class="skills-header">
                       <h2>Professional skills</h2>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci eum corrupti quis omnis soluta et fugit atque voluptatibus eveniet, voluptates ducimus odio quae facilis ratione velit porro vitae minima voluptate?</p>   
               <!-- <button class="tertiary-btn">VIEW PROJECTS</button> -->

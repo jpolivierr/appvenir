@@ -115,12 +115,13 @@ img{
 .bk-main h4,
 .bk-main h5,
 .bk-main p,
+.bk-main label,
 .bk-main ul li{
     color: white;
 }
 
 .bk-dark{
-    background: #05040d;
+    background: rgb(19, 19, 19);
 }
 
 .bk-dark h1,
@@ -130,6 +131,7 @@ img{
 .bk-dark h5,
 .bk-dark p,
 .bk-dark span,
+.bk-dark label,
 .bk-dark ul li{
     color: white;
 }
@@ -213,7 +215,7 @@ img{
 }
 
 .border-top{
-    border-top: 1px solid var(--light-silver);
+    border-top: 1px solid rgba(255, 255, 255, 0.41);
 }
 
 .border{
@@ -225,7 +227,7 @@ img{
 }
 
 .error-msg{
-    color: rgb(235, 54, 54);
+    color: rgb(235, 54, 54) !important;
     font-size: .8rem;
     padding: .6rem 0rem;
 }

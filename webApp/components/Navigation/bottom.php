@@ -1,5 +1,5 @@
 <?php (function(){ ob_start(); ?>
- <article class="av-article-v1 footer bk-dark column-1x center-content av-padding-1x" >
+ <article class="av-article-v1 footer border-top bk-main column-1x center-content av-padding-1x" >
         <div class="container">
             <section >
                     <h4>Navigation</h4>

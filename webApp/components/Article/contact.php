@@ -1,5 +1,5 @@
 <?php (function(){ ob_start(); ?>
- <article id="contact" class="av-article-v1 contact column-2x column-top av-padding-2x">
+ <article id="contact" class="av-article-v1 contact bk-dark column-2x column-top av-padding-2x">
         <div class="container">
             <section >
                     <h2>Get in touch</h2>
@@ -19,9 +19,9 @@
         
                      </ul>                   
             </section>
-            <figure>
+            <figure style="justify-self: flex-end ;">
             <form id="contactForm" action="">
-            <h2>Send me a message</h2>
+            <h2>Message me</h2>
             <p>You can reach me anytime via gh@gmail.com</p>
                         <fieldset>
                             <label>Full Name</label>
