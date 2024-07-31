@@ -1,0 +1,156 @@
+/* 
+=======================================================
+START: Article
+=======================================================
+*/
+.av-article-v1{
+    padding: 3rem 0rem;
+}
+
+.av-article-v1 div:nth-child(1){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.av-article-v2{
+    padding: 5rem 0rem;
+}
+
+.av-article-v2 div:nth-child(1){
+    width: 100%;
+    max-width: 1658px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    /* border: 4px solid blue; */
+}
+
+.av-article-v2 div:nth-child(1) figure{
+    justify-self: flex-end;
+    max-width: 1500px;
+    /* border: 4px solid red; */
+}
+
+.av-article-v2 div:nth-child(1) section{
+    justify-self: center;
+    /* border: 4px solid green; */
+    align-self: center;
+}
+/* 
+=======================================================
+END: 
+=======================================================
+*/
+/* 
+=======================================================
+START: COLUMNS
+=======================================================
+*/
+.columns-reverse div:nth-child(1) {
+    grid-template-columns: 1fr 1fr ;
+}
+
+.columns-reverse div:nth-child(1) figure{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    z-index: 1;
+    max-width: 1500px;
+}
+
+.columns-reverse div:nth-child(1) section{
+
+}
+
+
+.column-1x div:nth-child(1){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.column-1x-center div:nth-child(1){
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+}
+
+.column-2x div:nth-child(1){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.column-3x div:nth-child(1){
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.column-4x div:nth-child(1){
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.column-top div:nth-child(1){
+    align-items: flex-start;
+}
+
+.column-1x-3x-center div:nth-child(1){
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    column-gap: 4.5rem;
+}
+
+.column-1x-3x-center div:nth-child(1) section:nth-child(1){
+    justify-self: center;
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+
+}
+
+.column-1x-3x-center div:nth-child(1) section {
+    padding: 2rem 0rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+/* 
+=======================================================
+END: 
+=======================================================
+*/
+
+/* 
+=======================================================
+START: content
+=======================================================
+*/
+.center-content p{
+    max-width: 800px !important;
+}
+
+/* .center-content div:nth-child(1){
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+} */
+
+.center-content div:nth-child(1) section{
+     text-align: center;
+     display: flex;
+     flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-top-vertical div section{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    text-align: center;
+}
+
+.content-top div section{
+    align-self: flex-start;
+}

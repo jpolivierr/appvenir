@@ -1,0 +1,152 @@
+
+/* 
+=======================================================
+START: AV HEADER V1
+=======================================================
+*/
+.av-header-v1{
+    padding: 1rem 0rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: transparent;
+    z-index: 5;
+    transition: .3s;
+    border-bottom: 1px solid #ffffff24;
+}
+
+.av-header-v1 div:nth-child(1) figure{
+    max-width: 150px;
+}
+
+.av-header-v1 div:nth-child(1) figure a p{
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.av-header-v1 .container {
+    display: grid;
+    grid-template-columns: 1fr max-content max-content max-content;
+    align-items: center;
+    column-gap: 4.5rem;
+}
+
+.av-header-v1 div:nth-child(1) section {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    padding: 0rem .5rem;
+}
+
+.av-header-v1 div:nth-child(1) section:hover{
+    background-color: #5a3bea12;
+}
+
+.av-header-v1 div:nth-child(1) section ul{
+    display: flex;
+    column-gap: 1.5rem;
+    background: var(--tertiary-color);
+    border-radius: 10px;
+    padding: .3rem .7rem;
+}
+
+.av-header-v1 div:nth-child(1) nav ul a li{
+    cursor: pointer;
+    color: white ;
+}
+
+.av-header-v1 div:nth-child(1) section ul a li{
+    cursor: pointer;
+    color: white !important;
+}
+
+
+/* 
+=======================================================
+END:
+=======================================================
+*/
+
+/* 
+=======================================================
+START: Nav List
+=======================================================
+*/
+
+.av-header-v1 div:nth-child(1)  nav {
+    height: 100%;
+}
+.av-header-v1 div:nth-child(1)  nav ul,
+header div:nth-child(1)  nav ul{
+    display: flex;
+    column-gap: 1.5rem;
+    height: 100%;
+}
+
+.av-header-v1 div:nth-child(1) nav ul li{
+    border: 2px solid transparent;
+    font-weight: 300;
+    padding: .3rem .5rem;
+    height: 100%;
+    cursor: pointer;
+    transition: .3s;
+    display: flex;
+   align-items: center;
+   font-size: 16px;
+}
+
+.av-header-v1 div:nth-child(1) nav ul li:hover{
+    background-color: #5a3bea12;
+}
+
+
+/* 
+=======================================================
+END:
+=======================================================
+*/
+
+/* 
+=======================================================
+START: Menu
+=======================================================
+*/
+
+.av-header-v1 div:nth-child(1) menu{
+    display: flex;
+    width: 25px;
+    height: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+  
+}
+
+.av-header-v1 div:nth-child(1) menu div{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 10px; 
+}
+
+.av-header-v1 div:nth-child(1) menu div:nth-child(2){
+    width: 50%;
+    align-self: flex-end;
+}
+
+.av-header-v1 div:nth-child(1) menu div:nth-child(3){
+    width: 100%;
+    align-self: flex-end;
+}
+
+/* 
+=======================================================
+END:
+=======================================================
+*/

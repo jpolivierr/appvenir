@@ -1,0 +1,324 @@
+/* 
+=======================================================
+START: RESPONSIVE
+=======================================================
+*/
+
+@media (max-width: 1200px){
+    .hero figure::before {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero figure::after {
+        width: 300px;
+        height: 300px;
+        background: transparent;
+
+    }
+}
+
+@media (max-width: 950px){
+    .container{
+        width: 87%;
+    }
+
+    .skills-header{
+        padding: 0;
+    }
+
+    .tech-logo{
+        gap: .5rem;
+    }
+
+    .tech-logo-section p{
+        margin-bottom: 3rem;
+    }
+
+    .tech-logo figure{
+        height: 80px;
+        width: 20%;
+    }
+
+
+    /* article */
+    .av-article-v2 div:nth-child(1){
+        width: 100%;
+        max-width: 1558px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: flex-start;
+        row-gap: 2rem;
+    }
+
+    .av-article-v2 div:nth-child(1) section{
+        margin: 0;
+        width: 95%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .av-article-v2 div:nth-child(1) figure{
+        max-width: 100%;
+        justify-self: center;
+    }
+
+    .columns-reverse div:nth-child(1) figure{
+        max-width: 100%;
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 2;
+        z-index: 1;
+    }
+
+
+
+    #idx div:nth-child(1){
+        grid-template-columns:1fr;
+    }
+
+    .hero div:nth-child(1) .mobile{
+        width: 200px;
+        height: 490px;
+        max-height: 390px;
+        border-radius: 35px;
+    }
+
+    .hero div:nth-child(1) .desktop{
+      
+        height: 450px;
+    }
+
+    .contact figure{
+        justify-self: flex-start !important;
+    }
+
+    .contact figure form{
+        width: 100%;
+        padding: 3rem 1.5rem;
+    }
+
+
+}
+
+@media (max-width: 700px){
+
+    .gb-section{
+        margin-bottom: 0rem;
+    }
+
+    .list-hometrest ul{
+        display: flex;
+        flex-flow: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    /* global */
+    .av-padding-2x{
+        padding: 4rem 0rem !important;
+    }
+
+    .av-article-v2 div:nth-child(1) section{
+        padding: 0rem 1rem
+    }
+    h1{
+        font-size: 2.6rem;
+    }
+  /* util */
+    h2{
+        font-size: 1.8rem !important;
+    }
+
+    .skills i{
+        margin: inherit;
+        margin-bottom: 1.7rem;
+    }
+    
+
+    p,legend,label, button, h3{
+        font-size: .9rem;
+        max-width: 100% !important;
+    }
+    button{
+            font-size: .8rem;
+        }
+    .project-content span{
+        font-size: .9rem;
+    }
+
+    .project-content ul li{
+        font-size: .9rem;
+    }
+    /* padding */
+    .av-padding-flush-top{
+        padding-top: 0rem !important;
+    }
+
+    .av-padding-mini{
+        padding: 1rem 0rem !important;
+    }
+    
+    .av-padding-small{
+        padding: 3rem 0rem !important;
+    }
+
+    .av-padding-3x{
+        padding: 6rem 0rem !important;
+    }
+
+    .av-padding-flush-bottom{
+        padding-bottom: 0rem !important;
+    }
+
+    .av-padding-side-1x
+    {
+        padding-right: 4rem !important;
+        padding-left: 4rem !important;
+    }
+
+    .av-padding-top-3x{
+        padding-top: 6rem !important;
+    }
+
+    .av-padding-4x{
+        padding: 8rem 0rem;
+        padding-bottom: 0;
+    }
+
+    .av-padding-bottom-3x{
+        padding-bottom: 6rem;
+    }
+
+    /* header */
+    .av-header-v1{
+        padding: 1.1rem 0rem;
+    }
+
+    .av-header-v1 div:nth-child(1) figure{
+        max-width: 90px;
+    }
+
+    .av-header-v1 div:nth-child(1){
+        grid-template-columns: max-content max-content;
+        justify-content: space-between;
+    }
+    .av-header-v1 div:nth-child(1) nav{
+        display: none;
+    }
+
+    .av-header-v1 div:nth-child(1) section{
+        display: none;
+    }
+
+    .av-header-v1 div:nth-child(1) menu{
+        display: flex;
+    }
+
+
+    /* articles */
+
+    .av-article-v1 {
+        /* padding: 3rem 0rem;
+        margin-bottom: .8rem; */
+    }
+    .av-article-v1 div:nth-child(1){
+        grid-template-columns: 1fr !important;
+    }
+
+    .av-article-v1 div:nth-child(1) figure{
+        grid-column-start: 1;
+        grid-row-start: 2;
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    .av-article-v2 div:nth-child(1) section{
+        /* padding-left: 0rem; */
+    }
+
+    /* columns */
+    .columns-reverse div:nth-child(1){
+        grid-template-columns: 1fr;
+    }
+
+    .columns-reverse div:nth-child(1) section{
+        /* padding-left: 0rem; */
+    }
+
+    .column-3x div:nth-child(1){
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+
+    .column-4x div:nth-child(1){
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+
+    .column-1x-3x-center div:nth-child(1){
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .column-1x-3x-center div:nth-child(1) section:nth-child(1){
+        grid-column: 1;
+        justify-self: center;
+    
+    }
+    
+    .column-1x-3x-center div:nth-child(1) section section:nth-child(1){
+        text-align: center;
+        padding: 0rem;
+    }
+
+    /* special */
+
+    .skills section:nth-child(2)::before,
+    .skills section:nth-child(3)::before,
+    .skills section:nth-child(4)::before{
+        display: none !important;
+    }
+
+    .skills section:nth-child(2)::after,
+    .skills section:nth-child(3)::after,
+    .skills section:nth-child(4)::after{
+        display: none !important;
+    }
+
+    .column-1x-3x-center div:nth-child(1) section{
+        text-align: left;
+    }
+
+    .column-1x-3x-center div:nth-child(1) section:nth-child(1){
+        align-items: flex-start;
+    }
+
+    .column-1x-3x-center div:nth-child(1) section:nth-child(1){
+        margin-bottom: 0rem;
+        padding: 0rem;
+    }
+
+    .column-1x-3x-center div:nth-child(1) section:nth-child(4){
+        padding-bottom: 0;
+    }
+
+    .skills-header{
+        padding-top: 0 !important;
+    }
+
+    .budget{
+        padding-top: 0;
+    }
+    
+
+}
+
+/* 
+=======================================================
+END
+=======================================================
+*/

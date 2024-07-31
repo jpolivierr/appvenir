@@ -1,0 +1,105 @@
+/* 
+=======================================================
+START: UTIL
+=======================================================
+*/
+li{
+    list-style: none;
+    color: var(--dark-text);
+ }
+
+ a{
+    text-decoration: none;
+    color: inherit;
+ }
+
+ h1{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  max-width: 750px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+ h2{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  max-width: 600px;
+  line-height: 1.3;
+  color: var(--dark-text);
+  font-weight: 600;
+ }
+
+
+ h3{
+   color: #9391aa;
+   font-weight: 500;
+   margin-bottom: .9rem;
+   font-size: 1rem;
+  
+ }
+
+ h4{
+  font-size: 22px;
+  margin-bottom: .5rem;
+  color: var(--dark-text);
+  font-weight: 600;
+ }
+
+ p,legend, label, a{
+   color: var(--text-color);
+   line-height: 1.6;
+   max-width: 550px;
+   font-weight: 300;
+   font-size: 18px;
+ }
+
+ form legend{
+   margin-bottom: 2rem;
+ }
+
+ form fieldset{
+   margin-bottom: 1.5rem;
+ }
+
+ form fieldset label{
+   margin-bottom: .3rem;
+   display: block;
+ }
+
+ form input{
+   width: 100%;
+   color: var(--dark-text);
+ }
+
+ form button{
+   margin-top: .5rem;
+   width: 100%;
+   padding: 1.2rem 0rem !important
+ }
+
+ input, textarea{
+   border: none;
+   outline: none;
+   padding: .3rem 0rem;
+   border-radius: 0px;
+   background: transparent;
+   border-bottom: 1px solid var(--dark-text);
+   color: white;
+
+ }
+
+ form textarea{
+   width: 100%;
+   height: 100px;
+ }
+
+ fieldset{
+   border: none;
+ }
+
+/* 
+=======================================================
+END: UTIL
+=======================================================
+*/
