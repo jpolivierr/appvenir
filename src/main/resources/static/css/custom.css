@@ -332,7 +332,7 @@ border-radius: 10px;
     align-items: center;
     overflow: hidden;
     height: 100px;
-    border: 1px solid #ecf2f5;
+    border: 1px solid var(--light-blue-2);
     border-radius: 10px;
     background: white;
     width: 14%;
@@ -346,6 +346,10 @@ border-radius: 10px;
     top: 0;
     bottom: 0;
     margin: auto;
+}
+
+.border-bottom-v{
+    border: 1px solid var(--light-blue-2);
 }
 
 .tech-logo figure .react{

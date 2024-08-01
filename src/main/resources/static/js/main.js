@@ -8,20 +8,20 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        window.onscroll = () => {
-            const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
 
-            if (scrollPosition >= 76) {
-                header.classList.add("bk-white", "main-shadow");
-                header.classList.remove("bk-main");
+            if (scrollPosition >= 16) {
+                header.classList.add("bk-white", "border-bottom-v");
             } else {
-                header.classList.remove("bk-white", "main-shadow");
+                header.classList.remove("bk-white", "border-bottom-v");
             }
-        };
+        });
     };
 
     headerEffect(".av-header-v1");
 });
+
 
 
 //active link

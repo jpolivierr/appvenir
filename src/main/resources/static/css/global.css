@@ -22,14 +22,15 @@ START: GLOBAL
     --shadow-soft : 10px 0px 50px -30px #4264889c;
     --shadow-btn: 5px 5px 20px -11px #56628f2c;
   
-    --light-blue: #eef6fe5e;
+    
     /* --light-blue: #fbfbfb; */
     --text-color: #4f5971;
     --text-color-light: #cacace;
     --text-color-error: #ff4e4e;
     --dark-text: #1f1f59;
     --light-silver: #ebecee;
-  
+    --light-blue-2: #e5eef2;
+    --light-blue: #eff1f25e;
     /* --main-color : #4918cf; */
     --main-color : #121180; 
     --secondary-color: #8c4bff;
