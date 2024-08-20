@@ -340,7 +340,7 @@ border-radius: 10px;
 
 .tech-logo figure img{
     position: absolute;
-    width: 50%;
+    width: 70%;
     left: 0;
     right: 0;
     top: 0;
@@ -389,7 +389,7 @@ border-radius: 10px;
 }
 
 .tech-logo figure .sass{
-    width: 40%;
+    width: 80%;
 }
 
 .mhi-img{
